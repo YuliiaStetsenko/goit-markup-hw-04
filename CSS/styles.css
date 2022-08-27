@@ -173,6 +173,7 @@ color:var(--secondary-text-color-theme-light);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image:
    
 
 }
@@ -323,6 +324,19 @@ text-align: center;
 letter-spacing: 0.03em;
     color:var(--secondary-text-color-theme-light);
  }
+ 
+/* ========================  CLIENTS  ======================== */
+
+.title_clients{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color-theme-light);
+
+}
  
 /* ========================  FOOTER  ======================== */
 
