@@ -217,8 +217,6 @@ background-color:var(--accent-color);
 
 /* ========================  ABOUT  ======================== */
 
-
-
 .about_us{
     display: flex;
     align-items: flex-start;
@@ -226,6 +224,7 @@ background-color:var(--accent-color);
 
 .card{
     flex-basis: calc((100%-90px)/4);
+    
 }
 
 .title_about_us {
@@ -235,6 +234,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
     color:var(--primary-text-color-theme-light);
+   margin-top: 30px;
     margin-bottom: 10px;
 }
  .text_about_us{
@@ -249,6 +249,16 @@ color:var(--secondary-text-color-theme-light);
  .card:not(:last-child) {
     margin-right: 30px;
  }
+
+ .bcg{
+    background: #F5F4FA;
+border-radius: 4px;
+ }
+
+ .icons_about_us{
+margin: 25px 100px;
+ }
+ 
 /* ========================  WHAT WE DO  ======================== */
 
 .page_what_we_do {
@@ -336,8 +346,36 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-text-color-theme-light);
 
+
 }
+
+.logo_list{
+   margin-top: 50px;
+   display: flex;
+   column-gap: 30px; 
+
+  }
  
+.logo_item{
+   border: 1px solid #AFB1B8;
+border-radius: 4px;
+width: 170px;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+cursor: pointer;
+
+}
+
+.logo_list:focus ,  {
+    color: var(--accent-color);
+
+}
+
+.logo_list:hover{
+    color: var(--accent-color);
+}
+
 /* ========================  FOOTER  ======================== */
 
  .contacts_footer{
