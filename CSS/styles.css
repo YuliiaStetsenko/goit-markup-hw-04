@@ -158,6 +158,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--secondary-text-color-theme-light);
+display: flex;
+align-items: center;
 }
 
 .menu_link:hover , .contact_link:hover, 
@@ -172,13 +174,10 @@ color:var(--secondary-text-color-theme-light);
 
 .icon_contact{
     margin-right: 10px;
-    fill: var(--color-nav-icon);
+    fill: currentColor;
    }
 
-   .contact_link:hover .icon_contact ,
-.contact_link:focus .icon_contact {
-    fill: var(--accent-color);
-}
+
 
    /* ========================  MAIN  ======================== */
 
@@ -190,7 +189,10 @@ color:var(--secondary-text-color-theme-light);
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/Imgbg.jpg');
     background-size: cover;
-
+    background-repeat: no-repeat;
+   max-width: 1600px;
+height: 600px;
+margin: 0 auto;
 }
 
     .title_main{
@@ -265,7 +267,7 @@ color:var(--secondary-text-color-theme-light);
  }
 
  .bcg{
-    background: #F5F4FA;
+    background-color: #F5F4FA;
 border-radius: 4px;
  }
 
@@ -326,7 +328,7 @@ border-radius: 0px 0px 4px 4px;
  }
 
 .text_our_team{
-    padding: 30px 0px 16px;
+    padding: 30px 0;
 }
 
  .subtitle_our_team {
@@ -353,8 +355,8 @@ letter-spacing: 0.03em;
  
     display: flex;
     justify-content: center;
-    align-items: center;
-    column-gap: 10px;
+       column-gap: 10px;
+margin-top: 16px;
   
    }
 
@@ -365,24 +367,21 @@ letter-spacing: 0.03em;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--primary-background-color);
+   color:var(--primary-color-icons);
    
 }
 
 .icon {
     width: 20px;
     height: 20px;
-    fill: var(--primary-color-icons);
+    fill: currentColor;
 }
 
-.icons_content{
-   padding-bottom: 30px;
-   padding-left: 32px;
-   padding-right: 32px;
-}
+
 
 .link_icons_team:hover , .link_icons_team:focus {
     background-color: var(--accent-color);
+    color: var(--primary-background-color);
 }
 
 .link_icons_team:hover .icon,
@@ -406,40 +405,33 @@ color: var(--primary-text-color-theme-light);
 .logo_list{
    margin-top: 50px;
    display: flex;
-align-items: center;
-justify-content: center;
 column-gap: 30px;
   }
  
-.logo_item{
-border-radius: 4px;
-width: 170px;
-height:92px;
-padding: 16px 32px;
-cursor: pointer;
-border: 1px solid #AFB1B8;
-
-}
 
 .logo_img{
   width: 106px;
   height:60px;  
-  fill: var(--primary-color-icons);
+  fill: currentColor;
 }
 
-.logo_item:hover , .logo_item:focus {
-    border: 1px solid var(--accent-color);
+
+.link_logo{
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 170px;
+height:92px;
+border: 1px solid #AFB1B8;
+color: var(--primary-color-icons);
+
+}
+
+.link_logo:hover , .link_logo:focus{
+    border-color: var(--accent-color);
     color:var(--accent-color);
 }
-
-
-
-.link_logo:hover .logo_img ,
-.link_logo:focus .logo_img {
-    fill:var(--accent-color) ;
-    
-}
-
 
 /* ========================  FOOTER  ======================== */
 
@@ -537,7 +529,7 @@ column-gap: 10px;
 }
 
 .address_icons{
-    padding-left: 70px;
+    margin-left: 70px;
 }
 
 /* ========================  MAIN PORTFOLIO  ======================== */
@@ -575,6 +567,7 @@ padding: 6px 22px;
 .button_main:hover, .button_main:focus {
     background-color:var(--accent-color);
     color: var(--primary-text-color-theme-dark);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -591,10 +584,7 @@ padding: 6px 22px;
     padding:20px 24px;
 }
 .content_services_main{
-    width: 370px;
-height: 404px;
-left: 1015px;
-top: 1130px;
+
 
 }
 
@@ -619,9 +609,10 @@ color:var(--secondary-text-color-theme-light);
     display:block;
 }
 
-.services_main .content_services_main:hover,
-.services_main .content_services_main:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+
+
+.content_link:hover , .content_link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
